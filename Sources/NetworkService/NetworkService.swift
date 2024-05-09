@@ -20,7 +20,7 @@ public class PincodeService {
         }
     }
     
-    public func generateToken(completion: @escapring (Int) -> () ) {
+    public func generateToken(completion: @escaping (Int) -> () ) {
         
         var token: Int = 0
         
