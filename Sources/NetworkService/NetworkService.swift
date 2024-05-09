@@ -5,6 +5,11 @@
 import Foundation
 
 public class PincodeService {
+    
+    public init() {
+        
+    }
+    
     public func generatePincode(completion: @escaping (Int)->() )  {
         
         var random: Int = 0
@@ -14,4 +19,6 @@ public class PincodeService {
             completion(random)
         }
     }
+    
+    
 }
