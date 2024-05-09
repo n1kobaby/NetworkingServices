@@ -20,5 +20,15 @@ public class PincodeService {
         }
     }
     
+    public func generateToken(completion: @escapring (Int) -> () ) {
+        
+        var token: Int = 0
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            token = Int.random(in: 100000000...999999999)
+            completion(token)
+        }
+    }
+    
     
 }
